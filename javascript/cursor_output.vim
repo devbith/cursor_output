@@ -2,7 +2,10 @@
 let editingFile = expand('%:p') 
 let script_dir = expand('<sfile>:p:h')
 
-nnoremap <f5> :update \| call <SID>ExecuteJob() <cr> 
+
+inoremap <f5> <c-o>:update \| call <SID>ExecuteJob() <cr><ESC>
+noremap <f5> :update \| call <SID>ExecuteJob() <cr>
+
 highlight Pmenu ctermbg=white 
 
 func! s:ExecuteJob()
