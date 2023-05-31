@@ -1,15 +1,8 @@
 ### Installation
 
-
+Open terminal, copy and run the below code.
 ```
-cd ${path_of_your_choice} e.g ~/project 
-git clone https://github.com/devbith/cursor_output
-```
-Add the following in the ~/.vimrc
-```
-filetype plugin on
-autocmd Filetype java source ${path_of_your_choice}/cursor_output/java/cursor_output.vim
-autocmd Filetype javascript source ${path_of_your_choice}/cursor_output/javascript/cursor_output.vim
+curl -O https://raw.githubusercontent.com/devbith/cursor_output/main/setup.sh && chmod +x setup_script.sh && ./setup.sh
 ```
 ###### Make sure to update ${path_of_your_choice} 👆 
 
