@@ -9,7 +9,7 @@ j_file=`echo ${1} | awk -F '/' '{print $NF}' | sed 's/.java//'`
 script_dir=`cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd`
 
 # Compile and write result
-javac -cp ".:${j_directory_path}/*" ${1} > ${script_dir}/output.txt 2>&1
+javac -cp ".:${j_directory_path}/*" ${1}
 
 # Run and write result
-java -cp ".:${j_directory_path}/" ${j_file} >> ${script_dir}/output.txt 2>&1
+java -cp ".:${j_directory_path}/" ${j_file} 
