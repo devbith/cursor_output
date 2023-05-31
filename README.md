@@ -2,7 +2,7 @@
 
 Open terminal, copy and run the below code.
 ```
-curl -O https://raw.githubusercontent.com/devbith/cursor_output/main/setup.sh && chmod +x setup_script.sh && ./setup.sh
+curl -O https://raw.githubusercontent.com/devbith/cursor_output/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 
 
