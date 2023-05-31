@@ -1,7 +1,7 @@
 " Map F5 key to compile and run Java program
 nnoremap <F5> :call CompileAndRunJava()<CR>
 
-highlight Pmenu ctermbg=white
+highlight Pmenu ctermbg=lightmagenta ctermfg=black
 
 " Global variable to store the job ID
 let g:java_job_id = -1
